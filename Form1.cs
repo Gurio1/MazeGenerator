@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace MazeGenerator
@@ -30,6 +32,7 @@ namespace MazeGenerator
             _mazeControl.ShowResolvedWay(way);
 
             WindowState = FormWindowState.Minimized;
+            ResolveButton.Enabled = false;
         }
 
         private void GenerateMazeClick(object sender, EventArgs e)
